@@ -35,4 +35,15 @@ void main() {
   print(meyveler.isNotEmpty); // yapı boş olmadığı için true döndürür
 
   print(meyveler.contains("Muz"));
+
+  for(var m in meyveler) {
+    print("Sonuç: $m"); // meyveleri karışık bir şekilde tek tek yazdırır
+  }
+
+  for(var i = 0; i < meyveler.length; i++) {
+   print("$i. indeksteki veri: ${meyveler.elementAt(i)}"); // indekste bulunan verileri tek tek yazdırır
+  }
+
+  meyveler.remove("Kivi"); // silme işlemi yapar
+  print(meyveler);
 }
